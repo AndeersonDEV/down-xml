@@ -1,74 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@500&display=swap');
-:root{
+
+:root {
     --bg-principal: rgb(32, 127, 206);
-    --bg-secundario:rgb(16, 43, 75);
-    --cor-texto-principal: rgb(219,173,69);
+    --bg-secundario: rgb(16, 43, 75);
+    --cor-texto-principal: rgb(219, 173, 69);
     --cor-texto-secundario: #fff
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .hidden {
     display: none;
 }
-body{
+
+body {
     background-color: var(--bg-principal);
     color: var(--cor-texto-principal);
     font-family: "Sora", sans-serif;
 }
-.cabecalho{
+
+.cabecalho {
     background-color: var(--bg-secundario);
     display: flex;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
     color: var(--cor-texto-secundario)
 }
-.cabecalho img{
+
+.cabecalho img {
     width: 5%;
     position: relative;
     align-self: flex-start;
 }
-.container{
+
+.container {
     margin-top: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 3rem;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
 }
-.chave_acesso{
+
+.chave_acesso {
     width: 20rem;
 }
-#loja{
+
+#loja {
     width: 3rem;
 }
-#envia{
+
+#envia {
     text-align: center;
     width: 6rem;
     height: 3rem;
 }
-.form{
+
+.form {
     display: flex;
     background-color: var(--bg-secundario);
     border-radius: 8px;
     padding: 1rem;
 }
-#formulario{
+
+#formulario {
     display: flex;
     flex-direction: column;
 }
-.btn-enviar{
+
+.btn-enviar {
     display: flex;
     justify-content: center;
 }
-.btn-enviar input{
+
+.btn-enviar input {
     background-color: #fff;
     border: none;
     color: red;
@@ -78,7 +93,8 @@ main{
     box-shadow: 2px 2px black;
     border-radius: 1rem;
 }
-.btn-add-nova-linha{
+
+.btn-add-nova-linha {
     background-color: #fff;
     border: none;
     color: #000;
@@ -91,18 +107,22 @@ main{
     cursor: pointer;
 
 }
-.desativa{
+
+.desativa {
     display: none;
 }
-.formulario__titulo{
+
+.formulario__titulo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-.formulario__titulo p{
+
+.formulario__titulo p {
     color: var(--cor-texto-secundario);
 }
-.btn-fechar-formulario{
+
+.btn-fechar-formulario {
     background-color: #fff;
     border: none;
     color: red;
@@ -114,27 +134,30 @@ main{
     padding: 0rem 0.4rem;
     cursor: pointer;
 }
-.cabecalho__tabela{
+
+.cabecalho__tabela {
     background-color: var(--bg-secundario);
     color: #fff;
     font-size: 1rem;
     font-weight: 100;
 }
-.cabecalho div{
+
+.cabecalho div {
     display: flex;
     flex-direction: column;
     color: beige;
     font-size: 0.8rem;
-    
+
 }
 
-.tabela_chaves__local{
+.tabela_chaves__local {
     width: 100%;
     border: 0.1rem solid black;
     box-shadow: 0.1rem 0.1rem black;
     border-radius: 0.2rem;
 }
-.tabela_chaves__local td{
+
+.tabela_chaves__local td {
     width: 100%;
     border: 1px solid var(--bg-secundario);
     color: #fff;
@@ -142,3 +165,37 @@ main{
 }
 
 
+#loading-spinner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 8px solid transparent;
+    border-top-color: #c06c59;
+    border-right-color: #33c9ff70;
+    border-bottom-color: #ffeb337a;
+    border-left-color: #33ff5873;
+    border-radius: 50%;
+    animation: spin 300ms linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
