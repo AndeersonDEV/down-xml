@@ -11,7 +11,7 @@ async function Envio() {
     formData.append('loja', JSON.stringify(valorLoja))
     formData.append('chaves', JSON.stringify(valoresChaves))
 
-    const response = await fetch('http://10.210.2.95:3000/ReceberChave', {
+    const response = await fetch('https://fantastic-acorn-69gwx5pwq6gg3xv66-3000.app.github.dev/ReceberChave', {
         method: 'POST',
         body: formData,
     });
