@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@500&display=swap');
+:root{
+    --bg-principal: rgb(32, 127, 206);
+    --bg-secundario:rgb(16, 43, 75);
+    --cor-texto-principal: rgb(219,173,69);
+    --cor-texto-secundario: #fff
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hidden {
+    display: none;
+}
+body{
+    background-color: var(--bg-principal);
+    color: var(--cor-texto-principal);
+    font-family: "Sora", sans-serif;
+}
+.cabecalho{
+    background-color: var(--bg-secundario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    color: var(--cor-texto-secundario)
+}
+.cabecalho img{
+    width: 5%;
+    position: relative;
+    align-self: flex-start;
+}
+.container{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.chave_acesso{
+    width: 20rem;
+}
+#loja{
+    width: 3rem;
+}
+#envia{
+    text-align: center;
+    width: 6rem;
+    height: 3rem;
+}
+.form{
+    display: flex;
+    background-color: var(--bg-secundario);
+    border-radius: 8px;
+    padding: 1rem;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+}
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+}
+.btn-enviar input{
+    background-color: #fff;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-family: "Sora", sans-serif;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px black;
+    border-radius: 1rem;
+}
+.btn-add-nova-linha{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-family: "Sora", sans-serif;
+    font-size: 0.2;
+    box-shadow: 2px 2px black;
+    border-radius: 0.2rem;
+    padding: 0rem 0.4rem;
+    cursor: pointer;
+
+}
+.desativa{
+    display: none;
+}
+.formulario__titulo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.formulario__titulo p{
+    color: var(--cor-texto-secundario);
+}
+.btn-fechar-formulario{
+    background-color: #fff;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-family: "Sora", sans-serif;
+    font-size: 0.2;
+    box-shadow: 2px 2px black;
+    border-radius: 0.2rem;
+    padding: 0rem 0.4rem;
+    cursor: pointer;
+}
+.cabecalho__tabela{
+    background-color: var(--bg-secundario);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.cabecalho div{
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    font-size: 0.8rem;
+    
+}
+
+.tabela_chaves__local{
+    width: 100%;
+    border: 0.1rem solid black;
+    box-shadow: 0.1rem 0.1rem black;
+    border-radius: 0.2rem;
+}
+.tabela_chaves__local td{
+    width: 100%;
+    border: 1px solid var(--bg-secundario);
+    color: #fff;
+    text-align: center;
+}
+
+
